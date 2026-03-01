@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <p class="tag">RESUME CHECKER</p>
+        <h1>Is your resume good enough?</h1>
+        <p class="description">
+          A free and fast AI resume checker doing 16 crucial checks to ensure your resume is ready to perform and get you interview callbacks.
+        </p>
+
+        <div class="upload-box">
+          <p>Drop your resume here or choose a file.<br>
+          PDF & DOCX only. Max 2MB file size.</p>
+
+          <button class="btn-upload">Upload Your Resume</button>
+
+          <p class="privacy">
+            <i class="fa-solid fa-lock"></i> Privacy guaranteed
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/500x350" alt="Resume Dashboard Preview">
+      </div>
+
+    </div>
+  </section>
+{% endblock %}
