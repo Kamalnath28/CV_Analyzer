@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="hero">
+    <div class="auth-container" style="background: white; padding: 40px; border-radius: 12px; max-width: 400px; margin: auto; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+        <h2 style="margin-bottom: 20px; color: #2db783;">Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 20px;">Login</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
